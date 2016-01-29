@@ -6,33 +6,33 @@
 
 //NONE OF THE FOLLOWING ATTEMPTS TO IMPORT A SWIFT MODULE WORK:
 
-//Basic <Product_Name-Swift.h>, which is supposed to work doesn't work short way
-//#import <Test_Swift_Import-Swift.h>
-
-//or long way...
-//#import <Test_Swift_Import/Test_Swift_Import-Swift.h>
+//Basic <Product_Name-Swift.h>, which is supposed to work doesn't work.
+//#import <TestSwiftImport-Swift.h>
 
 // Try to import module itself
+
 // Obviously doesn't work, although this file actually exists.
 // No other files for BFKit (that I can see) can be imported
 //#import <BFKit/BFKit-Swift-umbrella.h>
+
+//No...
+//#import <BFKit/BFKit-Swift.h>
 
 //This would be nice...
 //#import <BFKit/BFKit.h>
 
 //This guy says use <ProjectName/ModuleName-Swift.h>:  http://stackoverflow.com/a/27744098/869838
 //Trying that, no deal...
-//#import <Test_Swift_Import/BFKit-Swift.h>
+//#import <TestSwiftImport/BFKit-Swift.h>
 
 //Maybe it's the Pods project we need? No deal...
-//#import <Pods_Test_Swift_Import/BFKit-Swift.h>
+//#import <Pods_TestSwiftImport/BFKit-Swift.h>
 
 //Trying it another way (not sure if module name is BFKit or BFKit-Swift), still no deal.
-//#import <Test_Swift_Import/BFKit-Swift-Swift.h>
+//#import <TestSwiftImport/BFKit-Swift-Swift.h>
 
+//Compiler doesn't complain about this, but neither does it solve my problem.
 #import <TestSwiftImport-Swift.h>
-
-#import
 
 @interface AppDelegate ()
 
@@ -43,9 +43,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+	//From BFKit
 	BOOL isEmail = [@"" isEmail];
 //	[NSString isEmail:@"yo"];
 
+	//From SwiftySwift - also doesn't work
 //	[UIColor randomColor];
 	return YES;
 }
