@@ -34,6 +34,9 @@
 //Compiler doesn't complain about this, but neither does it solve my problem.
 #import <TestSwiftImport-Swift.h>
 
+//This actually works! AppCode doesn't like it, but Xcode seems ok.
+#import "BFKit-Swift.h"
+
 @interface AppDelegate ()
 
 @end
