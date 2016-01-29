@@ -1,0 +1,15 @@
+PODS:
+  - BFKit-Swift (1.5.1)
+  - SwiftySwift (1.0.1)
+
+DEPENDENCIES:
+  - BFKit-Swift (= 1.5.1)
+  - SwiftySwift (~> 1.0.1)
+
+SPEC CHECKSUMS:
+  BFKit-Swift: c69d3ad0054e2f07f0118d2620b7b442b1e3b25b
+  SwiftySwift: 3964a42f451995ca52312506c9e164e10a258240
+
+PODFILE CHECKSUM: 6b93c0e9e0a73590b664ce7c12fcb4104bfd7811
+
+COCOAPODS: 1.0.0.beta.2

@@ -1,0 +1,6 @@
+framework module Pods_TestSwiftImport {
+  umbrella header "Pods-TestSwiftImport-umbrella.h"
+
+  export *
+  module * { export * }
+}
